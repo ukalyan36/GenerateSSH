@@ -1,0 +1,22 @@
+
+//generate ssh Key
+ssh-keygen -t rsa -b 4096 -C "ukalyan36@gmail.com"
+
+//enter file name
+SynitiSSH
+
+//enter paraphrase
+Syniti
+
+//start the ssh agent
+eval $(ssh-agent -s)
+
+//add the newly generated key
+ssh-add ~/.ssh/id_rsa
+
+//enter paraphrase
+Syniti
+
+
+//execute the below command and paste it on github site
+clip < ~/.ssh/id_rsa.pub
