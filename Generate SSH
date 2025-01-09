@@ -1,3 +1,5 @@
+// Reference 
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 //generate ssh Key
 ssh-keygen -t ed25519 -C "your_email@example.com"
@@ -7,6 +9,10 @@ fileName
 
 //enter paraphrase
 ******
+
+# start the ssh-agent in the background
+Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+Start-Service ssh-agent
 
 //start the ssh agent
 eval $(ssh-agent -s)
