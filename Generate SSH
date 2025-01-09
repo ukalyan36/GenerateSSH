@@ -1,6 +1,6 @@
 
 //generate ssh Key
-ssh-keygen -t rsa -b 4096 -C "youremail@domail.com"
+ssh-keygen -t ed25519 -C "your_email@example.com"
 
 //enter file name
 fileName
